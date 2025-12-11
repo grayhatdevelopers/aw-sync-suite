@@ -9,7 +9,7 @@ services:
     networks:
       - monitoring
     command:
-      - '--config.file=/prometheus/prometheus.yml'
+      - '--config.file=/etc/prometheus/prometheus.yml'
       - '--web.enable-remote-write-receiver'
       - '--storage.tsdb.retention.time=1y'
     volumes:
